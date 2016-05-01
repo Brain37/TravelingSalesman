@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brianscott.travelingsalesman.MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city1ET"
+        android:hint="city name" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add City"
+        android:id="@+id/addCityButton"
+        android:onClick="addCityButtonClicked" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city2ET"
+        android:hint="start city" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city3ET"
+        android:hint="end city" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceET"
+        android:hint="distance" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Edge"
+        android:id="@+id/addEdgeButton"
+        android:onClick="addEdgeButtonClicked"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        android:id="@+id/displayButton"
+        android:onClick="displayButtonClicked"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>
